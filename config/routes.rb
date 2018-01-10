@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'static_pages/home'
+  get 'home', to: 'static_pages#home'
 
   resources :passages
   root to: 'static_pages#home'
